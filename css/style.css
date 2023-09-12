@@ -1,0 +1,979 @@
+
+    /* branding {
+
+        color: #455D58;
+        color: #FC9285;
+        font-family: 'Amiri', serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Slab', serif;
+
+    } */
+
+
+
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Roboto+Slab:wght@100;300;600&family=Roboto:wght@100;300;400&display=swap');
+
+body,
+html {
+    background-color: #eee;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: #eee;
+}
+
+.bkg-green {
+    background-color: #455D58;
+    color: white;
+}
+
+.bkg-green p {
+    color: white;
+    font-weight: 100;
+}
+
+.bkg-green li {
+    color: white;
+    font-weight: 100;
+    list-style-type: none;
+}
+
+
+/* -------------fonts and text------------- */
+.dont-show {
+    display: none;
+}
+
+.dont-show h2 {
+    display: none;
+}
+
+h1 {
+    font-family: 'Amiri', serif;
+    font-size: 3em;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1em;
+    overflow: hidden;
+    color: #455D58;
+}
+
+h2 {
+    font-family: 'Amiri', serif;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    overflow: hidden;
+    color: #455D58;
+}
+
+h3 {
+    font-family: 'Amiri', serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    overflow: hidden;
+    color: #455D58;
+}
+
+p, a, li, td {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: #455D58;
+}
+
+a {
+    text-decoration: underline;
+    color: #FC9285;
+}
+
+footer a {
+    text-decoration: none;
+    color: #455D58;
+}
+
+a:hover {
+    color: #FFFFFF;
+    background-color: #455D58;
+}
+
+.dec-bkg-ttl {
+    font-size: 200px;
+    line-height: 150px;
+    /* -webkit-text-stroke: 1px #FC928530; */
+    color: #FC928540;
+    word-wrap: break-word;
+    z-index: 99;
+}
+
+.bkg-green .dec-bkg-ttl {
+    color: #a3dbd030;
+    -webkit-text-stroke: 1px #a3dbd030;
+    color: transparent;
+}
+
+
+.title-block {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 400!important;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: -30px;
+    z-index: 99;
+}
+
+.justify-end {
+    text-align: right;
+}
+
+.shift-up {
+    margin-top: -60px;
+}
+
+.shift-down {
+    margin-top: 60px;
+}
+
+.spacer-p {
+    padding: 2%;
+}
+
+.spacer-m {
+    margin-top: 5%;
+}
+
+/* -------------Scroll to top------------- */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: 3px solid transparent;
+    outline: none;
+    background-color: #fc9285;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+
+  #myBtn:hover {
+    background-color: #455d58;
+    border: 3px solid #fc9285;
+    color: #fff;
+  }
+
+/* -------------Header------------- */
+#section1Header {
+    padding: 0;
+}
+
+.sect-1-container-fluid {
+    margin: 2%;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* padding: auto; */
+    vertical-align: middle;
+    position: relative;
+}
+
+.container1 {
+    flex: 1;
+    height: auto;
+    margin: 1% 0;
+    flex-shrink: 3;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.container2_1,
+.container2_2,
+.container2_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.site-description {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.15em;
+    padding: 0;
+    color: #455D58;
+}
+
+
+
+/* -------------Navbar------------- */
+.navbar-item-fb {
+    color: #455D58;
+    font-size: 20px;
+    padding: 16px;
+    width: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+a.navbar-item {
+    font-family: 'Roboto', sans-serif;
+    color: #455D58;
+    line-height: 51px;
+    font-weight: 400;
+    padding: 0 16px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+}
+
+a:hover.navbar-item,
+a:hover.navbar-item-fb {
+    background-color: #FC9285;
+    color: white;
+}
+
+
+/* -------------Carousel------------- */
+#sect-Carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: flex-start;
+    align-items: flex-start;
+    padding: auto;
+    vertical-align: middle;
+    position: relative; */
+}
+
+/* Column One */
+.carousel-column-one {
+    width: 25%;
+    min-width: 260px;
+    padding: 10% 3%;
+    /* background-color: #455D58; */
+    /* z-index: 1; */
+}
+
+.carousel-column-one h2 {
+    color: white;
+    font-size: 3em;
+    font-weight: 100;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.carousel-column-one h3 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 100;
+    text-align: right;
+}
+
+/* Column Two */
+.carousel-column-two {
+    width: 75%;
+    padding: 0;
+    /* background-color: #455D58; */
+}
+
+.carousel-column-two img {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* Section 2 About section  */
+#sect-2About.container-fluid {
+    padding: 0;
+    width: 60%;
+    margin: 5% auto;
+}
+
+
+/* Section 3 The Cottage  */
+#sect-3Cottage.container-fluid {
+    padding: 0;
+    width: 90%;
+    margin: 4% auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+.container-amenities {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container-amenities-2 {
+    margin: 0 auto;
+    width: 70%;
+
+}
+
+.icon-desc {
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+}
+
+.icon-desc-2 {
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icon-desc i {
+    padding: 5%;
+}
+
+.icon-desc-2 i {
+    padding: 0 2%;
+}
+
+.icon-desc p {
+    padding: 0 10%;
+    margin: 0;
+    text-align: center;
+}
+
+.icon-desc-2 p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+.icon-column-one,
+.icon-column-two,
+.icon-column-three
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1%;
+    text-align: center;
+}
+
+.icon-column-one,
+.icon-column-two
+{
+    width: 30%;
+}
+
+.icon-column-three
+{
+    width: 40%;
+}
+
+.sect-3-column-three {
+    z-index: 0;
+    display: flex;
+    align-items: flex-end;
+    width: 30%;
+    margin-right: 8%;
+}
+
+.sect-3-column-three img {
+    width: auto;
+    margin-left: -5%;
+    height: auto;
+    border-radius: 50%;
+    max-width: 500px;
+}
+
+.sect-3-column-two {
+    margin: 1% 5%;
+    width: 50%;
+}
+
+/* Section 3 Gallery */
+/* -------------Picture Gallery section-------------  */
+#sect-3gallery {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+@media (min-width: 501px) {
+    #sect-3gallery {
+        width: 80%;
+        margin: 4% auto 0 auto;
+    }
+}
+@media (max-width: 500px) {
+    #sect-3gallery {
+        width: 100%;
+        margin: 4% 6% 0px 6%;
+    }
+}
+
+.container-gallery {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.container-gallery img {
+    height: 300px;
+    width: auto;
+    object-fit: contain;
+    margin: 2px;
+}
+
+.scroll {
+    background-color: #ffffff90;
+    border-radius: 50%;
+    height: 36px;
+    width: 24px;
+    color: #FC928590;
+    font-size: 2em;
+    z-index: 3;
+    position: relative;
+    right: 25px;
+    top: 175px;
+    padding: 10px;
+}
+
+ .scroll i {
+    right: 25px;
+    top: 145px;
+}
+
+@media (max-width: 1175px) {
+    .container-gallery {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        justify-content: flex-start;
+    }
+
+}
+
+@media (min-width: 1176px) and (max-width: 1450px) {
+    .container-gallery {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        justify-content: flex-start;
+    }
+
+}
+
+@media (min-width: 1451px) {
+    .container-gallery {
+        width: 95%;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* Section Pricing */
+#sect-pricing.container-fluid {
+    padding: 0;
+    width: 90%;
+    margin: 4% auto;
+}
+
+
+.container-pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 45px;
+}
+
+.column-pricing-1 {
+    padding: 0;
+    margin: 0;
+}
+
+.column-pricing {
+    padding: 0;
+    margin-left: 50px;
+}
+
+.subcol-1,
+.subcol-2 {
+    min-width: 275px;
+}
+
+.subcol-1 h2,
+.subcol-2 h2,
+.column-pricing-1 h2,
+.column-pricing h2 {
+    margin-top: 30px;
+}
+
+.subcol-1 p,
+.subcol-2 p,
+.column-pricing p {
+    margin-top: 0;
+}
+
+.td-p {
+    margin-bottom: 0;
+}
+
+.td-p-span-1 {
+    padding-left: 60px;
+}
+
+.td-p-span-2 {
+    padding-left: 46px;
+}
+
+.td-p-span-3 {
+    padding-left: 74px;
+}
+
+.td-p-span-4 {
+    padding-left: 74px;
+}
+
+
+/* Section 6 Booking */
+#sect-6Booking.container-fluid {
+    padding: 0;
+    width: 90%;
+    margin: 6% auto;
+}
+
+.container-booking {
+    margin: 0;
+    width: 100%;
+    display: inline-flex;
+}
+
+.column-cal-1 {
+    width: 50%;
+    min-width: 315px;
+}
+
+.column-cal-2 {
+    width: 60%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 5%;
+}
+
+div#airbnb {
+    /* height: 400px; */
+    width: 100%;
+    /* min-height: 1000px; */
+}
+
+h2.airBNB-cal {
+    margin: 30px 0;
+}
+
+div#airbnb {
+    background-color: transparent!important;
+}
+
+div#airbnb span {
+    font-family: 'Roboto', sans-serif!important;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.column-cal-2 li {
+    list-style-type: none;
+}
+
+#calendarKey{
+    margin-top: 10px;
+}
+
+#keyRow1,
+#keyRow2{
+    display: flex;
+    flex: row;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.square-available,
+.square-booked,
+.square-peak,
+.square-closed {
+    height: 15px;
+    width: 15px;
+    margin: 2px 10px;
+}
+
+p.key-1,
+p.key-2 {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    line-height: 0.8em;
+    padding: 0 10px 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p.key-1 {
+    min-width: 190px;
+}
+
+p.key-2 {
+    min-width: 45px;
+}
+
+.square-available {
+    background-color: #c5dad3;
+}
+
+.cell.booked,
+.square-booked {
+    background-color: #FC9285!important;
+}
+
+.square-peak,
+.cell.peak {
+    background-color: #92c9ae!important;
+}
+
+.square-closed {
+    background-color: #d6d6d6;
+}
+
+/* Embedded AirBNB calendar */
+.dhx_cal_container {
+    background-color: #fff;
+    font-family: "Segoe UI",Arial,san-serif;
+    font-size: 12px;
+}
+
+/* view button: day, week, month */
+.dhx_cal_tab {
+    font-size: 13px;
+    color: #455D58;
+    /* color: #FC9285; */
+}
+
+
+/* highlights which view button is active: day, week, month */
+.dhx_cal_tab.active {
+    font-weight: 300;
+    font-size: 13px;
+    color: #fff;
+    background-color: #455D58;
+}
+
+/* highlights today in calendar */
+.dhx_now .dhx_month_body, .dhx_now .dhx_month_head {
+    background-color: #c5dad3;
+}
+
+/* month numbers */
+.dhx_month_head {
+    height: 21px;
+    padding: 0 5px 0 0;
+    font-size: 12px;
+    font-weight: inherit;
+    line-height: 21px;
+    color: #455D58;
+    border-right: 1px solid #455D5820;
+    background-color: #fff;
+    text-align: right;
+}
+
+/* booking */
+.dhx_cal_event_line {
+    /* background-color: #FC9285; */
+    background-color: #455D58;
+    color: #fff;
+}
+
+
+.month_tab.active {
+    display:none!important;
+}
+
+/* .dhx_cal_tab, .dhx_cal_tab_last,  */
+.month_tab,
+.dhx_cal_qi_controls,
+.dhtmlXTooltip.tooltip,
+.dhx_cal_qi_content,
+.dhx_cal_quick_info .icon_details,
+.dhx_cal_quick_info .icon_delete {
+    display: none;
+}
+
+    /* border: 1px solid transparent;
+    border-radius: 1px;
+    font-family: "Segoe UI",Arial,san-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    height: 17px;
+    padding: 0 0 0 10px; */
+    /* cursor: pointer;
+    overflow: hidden; */
+
+/* ------------------------------ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section 5 Location */
+#sect-4Location.container-fluid {
+    padding: 0;
+    width: 90%;
+    margin: 4% auto;
+}
+
+.container-map {
+    margin: -50px auto 0 auto;
+    display: flex;
+    width: 90%;
+}
+
+.column-map {
+    width: 50%;
+    padding: 5%;
+}
+
+.container-map img {
+    width: 190%;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    border: 8px solid #455D58;
+    height: 300px;
+    width: 400px;
+    z-index: 1;
+    margin-left: 9%;
+    margin-top: calc(100% - 145px);
+    background-color: #455D58;
+}
+
+iframe#gmiframeap_canvas {
+    height: 300px;
+    width: 400px;
+    border: 0;
+    margin: 0;
+    scroll-behavior: auto;
+}
+
+/* Section Funpark */
+#sect-5Funplex.container-fluid {
+    padding: 4% 5% 0 5%;
+    background-color: #455D58;
+    width: 100%;
+    margin: 4% auto;
+}
+
+.column-1-funplex,
+.column-2-funplex {
+    width: 50%;
+    padding: 5%;
+}
+
+.column-2-funplex img {
+    width: 100%;
+}
+
+.leadingp {
+
+    margin-top: 5%;
+}
+
+.container-funplex {
+    margin: -50px auto 0 auto;
+    width: 90%;
+    display: inline-flex;
+
+}
+
+.link {
+    color: #a3dbd0;
+    font-style: italic;
+    text-align: right;
+    font-size: 1em;
+}
+
+
+/* Section Fun in Sun */
+#sect-funinsun.container-fluid {
+    padding: 0;
+    width: 100%;
+    margin: 4% auto 0 auto;
+}
+
+.container-funinsun {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-funinsun-gallery {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (max-width: 1175px) {
+    .container-funinsun-gallery {
+        width: 100%;
+        overflow-y: scroll;
+        justify-content: flex-start;
+    }
+}
+
+.container-funinsun-gallery img {
+    height: 200px;
+    margin: 2px;
+}
+
+
+/* -------------Footer------------- */
+#section-footer {
+    padding: 4% 5%;
+    background-color: #455D58;
+    width: 100%;
+}
+
+#section-footer.container-fluid {
+    width: 90%;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 300px;
+}
+
+.logo {
+    width: 300px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    /* align-items: space-between; */
+    /* padding: auto; */
+    vertical-align: middle;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    /* align-items: space-between; */
+    justify-content: center;
+    flex-direction: row;
+}
+
+.h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    font-weight: bold!important;
+    text-transform: uppercase;
+}
+
+.h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+.line1 {
+    /* background-color: #455d58ca; */
+    text-align: center;
+    margin: 0;
+    padding: 2px 0;
+}
+
+.line2 {
+    background-color: #394d4950;
+    text-align: center;
+    margin: 0;
+    padding: 2px 0;
+
+}
+
+footer p {
+    color: #455D58;
+    line-height: 1em;
+}
+
+footer a:hover {
+    color: #FC9285;
+}
